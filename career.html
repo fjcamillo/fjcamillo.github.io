@@ -15,64 +15,6 @@
             margin: 0 auto;
             padding: 40pt 20pt;
         }
-        .timeline {
-            position: relative;
-            margin: 0;
-            padding: 20pt 0;
-        }
-        /* The vertical line */
-        .timeline::after {
-            content: "";
-            position: absolute;
-            width: 4px;
-            background-color: #ccc;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -2px;
-        }
-        .timeline-item {
-            padding: 10pt 40pt;
-            position: relative;
-            width: 50%;
-        }
-        /* Timeline item on left */
-        .timeline-item.left {
-            left: 0;
-            text-align: right;
-        }
-        /* Timeline item on right */
-        .timeline-item.right {
-            left: 50%;
-            text-align: left;
-        }
-        .timeline-item::after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: #fff;
-            border: 4px solid #FF9F55;
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        /* Dot position for left items */
-        .timeline-item.left::after {
-            right: -10px;
-        }
-        /* Dot position for right items */
-        .timeline-item.right::after {
-            left: -10px;
-        }
-        .timeline-item p {
-            margin: 5pt 0;
-        }
-        .timeline-item h3 {
-            margin: 0 0 5pt;
-            font-size: 1.2em;
-            color: #FF9F55;
-        }
         .navbar {
             text-align: center;
             margin-top: 20pt;
@@ -81,16 +23,6 @@
             margin: 0 10pt;
             text-decoration: none;
             color: #000;
-        }
-        .timeline::after {
-            content: "";
-            position: absolute;
-            width: 4px;
-            background-color: #ccc;
-            top: 0;
-            bottom: 0;
-            left: 20%; /* Adjust this percentage to fine-tune the line position */
-            margin-left: -2px;
         }
         .career-timeline {
             position: absolute;
@@ -126,6 +58,10 @@
             </div>
             <div class="timeline-item right">
                 <h3>2014</h3>
+                <p>Position or event description for 2014.</p>
+            </div>
+            <div class="timeline-item right">
+                <h3>2017</h3>
                 <p>Position or event description for 2014.</p>
             </div>
             <div class="timeline-item right">
